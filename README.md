@@ -35,7 +35,7 @@ specification of the message to be sent would be: "-Err. It would help if you wa
 - In case a user has placed their ten flags, the game ends, the server checks if they are correct, and both users receive the message: "+ Ok. <User name> has won/lost", depending on whether you have hit the mines or not.
 - To exit the service, the message "EXIT" will be used; in this way, the server will remove it from connected clients. If it were playing, the game it was in would end, warning the other player: "+ Ok. Your opponent has finished the game", if you were waiting for a game, removes it from the wait.
 - Any message that does not use one of the detailed specifiers will generate a Err" message from the server.
-
+- Usuarios.txt, is the file divided by two values: Username Password
 
 # Commands to play
 - USER user: message to enter the user you want.
