@@ -36,6 +36,7 @@ specification of the message to be sent would be: "-Err. It would help if you wa
 - To exit the service, the message "EXIT" will be used; in this way, the server will remove it from connected clients. If it were playing, the game it was in would end, warning the other player: "+ Ok. Your opponent has finished the game", if you were waiting for a game, removes it from the wait.
 - Any message that does not use one of the detailed specifiers will generate a Err" message from the server.
 - Usuarios.txt, is the file divided by two values: Username Password
+- You can play in Lan network, modifying the Ip-adress, currently is set to localhost.
 
 # Commands to play
 - USER user: message to enter the user you want.
@@ -45,6 +46,31 @@ specification of the message to be sent would be: "-Err. It would help if you wa
 - PUT-FLAG letter, a number where the letter indicates the column, and number the row, of the cell where you want to place the flag.
 - EXIT: message to request to exit the game.
 - Any other type of message sent to the server will not be recognized by the protocol as a valid message and will generate its corresponding “-Err.” by the server.
+
+## How to play
+First, the client and server files must be compiled, for this the following commands will be used:
+```c++
+g++ servidor.cpp funcionesAuxiliares.cpp sala.cpp -o server
+g++ cliente.cpp funcionesAuxiliares.cpp sala.cpp -o client
+```
+To run the game:
+```
+./server # The first one
+./client # The second one, you will need two client to play
+```
+## Images of the game
+As through the terminal, the user logs successfully in the system and it searchs for an opponent:
+![alt tag](https://i.imgur.com/E72oC2Z.png)
+
+The game has started, and the first player has discover the cell A,0
+![alt tag](https://i.imgur.com/sbJmYVI.png)
+
+"A" player has put a flag in the cell A,5
+![alt tag](https://i.imgur.com/ZOcyPwC.png)
+
+"A" player has discovered a cell with a bomb, so the game is over.
+![alt tag](https://i.imgur.com/t1KOssl.png)
+
 
 ## Developed in 2018 by
 - José Luis Gordillo Relaño <i62gorej@hotmail.com>
