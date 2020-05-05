@@ -45,3 +45,7 @@ specification of the message to be sent would be: "-Err. It would help if you wa
 - PUT-FLAG letter, a number where the letter indicates the column, and number the row, of the cell where you want to place the flag.
 - EXIT: message to request to exit the game.
 - Any other type of message sent to the server will not be recognized by the protocol as a valid message and will generate its corresponding “-Err.” by the server.
+
+## Developed in 2018 by
+- José Luis Gordillo Relaño <i62gorej@hotmail.com>
+- Carlos de la Barrera Pérez <i12bapec@uco.es>
